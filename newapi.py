@@ -80,12 +80,15 @@ def get_oas_30(cfg: dict, locale: str) -> tuple[list[dict[str, str]], dict[str, 
 
     from pygeoapi.openapi import OPENAPI_YAML
 
+    LOGGER.debug('Setting up newapi endpoint')
+
     paths = {}
 
-    paths['/my-function'] = {
+    path = f''
+    paths[path] = {
         'get': {
             'summary': 'Get my function',
-            'description': 'Description of my my function',
+            'description': 'Description of my function',
             'tags': ['newapi'],
             'operationId': 'getMyFunction',
             'parameters': [
