@@ -9,3 +9,6 @@ services:
       - ./__init__.py:/pygeoapi/pygeoapi/api/__init__.py
       - ./newapi.py:/pygeoapi/pygeoapi/api/newapi.py
       - ./flask_app.py:/pygeoapi/flask_app.py
+    environment:
+      - PYGEOAPI_CONFIG=/pygeoapi/local.config.yml
+      - PYGEOAPI_OPENAPI=/pygeoapi/local.openapi.yml

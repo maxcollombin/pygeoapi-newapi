@@ -84,7 +84,7 @@ def get_oas_30(cfg: dict, locale: str) -> tuple[list[dict[str, str]], dict[str, 
 
     paths = {}
 
-    path = f''
+    path = f'/my-function'
     paths[path] = {
         'get': {
             'summary': 'Get my function',
