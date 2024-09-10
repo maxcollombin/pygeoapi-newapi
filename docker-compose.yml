@@ -7,7 +7,8 @@ services:
     volumes:
       - ./pygeoapi.config.yml:/pygeoapi/local.config.yml
       - ./__init__.py:/pygeoapi/pygeoapi/api/__init__.py
-      - ./newapi.py:/pygeoapi/pygeoapi/api/newapi.py
+      - ./itemstype.py:/pygeoapi/pygeoapi/api/itemstype.py
+      # - ./changeset.html:/pygeoapi/templates/collections/changeset.html
       - ./flask_app.py:/pygeoapi/flask_app.py
     environment:
       - PYGEOAPI_CONFIG=/pygeoapi/local.config.yml

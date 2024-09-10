@@ -133,7 +133,7 @@ def all_apis() -> dict:
     """
 
     from . import (coverages, environmental_data_retrieval, itemtypes, maps,
-                   processes, tiles, stac, newapi)
+                   processes, tiles, stac)
 
     return {
         'coverage': coverages,
@@ -142,8 +142,7 @@ def all_apis() -> dict:
         'map': maps,
         'process': processes,
         'tile': tiles,
-        'stac': stac,
-        'newapi': newapi
+        'stac': stac
     }
 
 
