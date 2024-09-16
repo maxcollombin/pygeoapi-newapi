@@ -8,4 +8,3 @@ pygeoapi openapi generate /pygeoapi/local.config.yml --output-file /pygeoapi/loc
 
 # Start the Flask application
 exec python3 flask_app.py
-
