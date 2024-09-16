@@ -6,7 +6,7 @@ services:
       - 5000:5000
     volumes:
       - ./pygeoapi.config.yml:/pygeoapi/local.config.yml
-      - ./__init__.py:/pygeoapi/pygeoapi/api/__init__.py
+      # - ./__init__.py:/pygeoapi/pygeoapi/api/__init__.py
       - ./newapi.py:/pygeoapi/pygeoapi/api/newapi.py
       - ./flask_app.py:/pygeoapi/flask_app.py
       - ./entrypoint.sh:/entrypoint.sh
